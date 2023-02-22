@@ -11,6 +11,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      // key: `${res.items[0].}-${Number(new Date())}`,
       recipes: res.items,
     },
   };
