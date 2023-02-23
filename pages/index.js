@@ -14,6 +14,7 @@ export async function getStaticProps() {
       // key: `${res.items[0].}-${Number(new Date())}`,
       recipes: res.items,
     },
+    revalidate: 1,
   };
 }
 
